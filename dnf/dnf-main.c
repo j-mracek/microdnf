@@ -321,7 +321,7 @@ get_command (int *argc,
       else if (argv[in][0] != '-')
         cmd_name = argv[in];
     }
-  if (cmd_name != NULL) --argc;
+  if (cmd_name != NULL) --*argc;
   return cmd_name;
 }
 
